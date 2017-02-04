@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Art:</strong>
+  <%= @meetup.art %>
+</p>
+
+<p>
+  <strong>Ort:</strong>
+  <%= @meetup.ort %>
+</p>
+
+<p>
+  <strong>Zeit:</strong>
+  <%= @meetup.zeit %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @meetup.details %>
+</p>
+<h3> Angemeldet Gäste </h3>
+<ul>
+  <% @meetup.users.each do |user| %>
+     <li> <%= user.name %> </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_meetup_path(@meetup) %> |
+<%= link_to 'Back', meetups_path %>

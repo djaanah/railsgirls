@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  art: MyString
+  ort: MyString
+  zeit: 2017-02-04 12:03:13
+  details: MyText
+
+two:
+  art: MyString
+  ort: MyString
+  zeit: 2017-02-04 12:03:13
+  details: MyText
